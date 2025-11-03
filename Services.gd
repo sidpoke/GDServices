@@ -7,7 +7,7 @@ extends RefCounted
 ##[codeblock]
 ##	@export var settings_system : SimpleSettingsSystem
 ##
-##func _exit_tree() -> void:
+##func _enter_tree() -> void:
 ##	# register 'as-is' with Node's script type
 ##	Services.register(settings_system)
 ##	# Alternative: register as abstract class
