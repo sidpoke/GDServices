@@ -19,8 +19,8 @@ func _ready():
 ```
 >The main menu doesn’t need any of those systems, yet it can freely mutate the entire game state.
 
-With GDServices, dependency management becomes a little easier, and is a lightweight compared to a full DI-Container solution.\
-Services can now be dynamically and uniquely loaded and unloaded within a Global-, Scene-, or Node-Lifecycle.\
+With GDServices, dependency management becomes a little easier, and is pretty lightweight compared to a full DI-Container solution.\
+Services can be dynamically and uniquely loaded and unloaded within a Global-, Scene-, or Node-Lifecycle.\
 This is **similar** to how Autoloads work in Godot, however doesn't support adding or removing Autoloads during runtime. GDServices does.\
 You can register `@abstract` base classes for true inversion of control, decoupling your code from specific implementations.
 
