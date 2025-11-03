@@ -29,7 +29,7 @@ You can register `@abstract` base classes for true inversion of control, decoupl
 extends Node
 @export var game_manager : GameManager
 
-func _exit_tree() -> void:
+func _enter_tree() -> void:
   Services.register(game_manager)
 
 func _exit_tree() -> void:
@@ -56,7 +56,7 @@ Using the service locator is incredibly easy.
 ```GDScript
 @export var settings_system : SimpleSettingsSystem
 
-func _exit_tree() -> void:
+func _enter_tree() -> void:
   # Register 'as-is' with Node's script type
   Services.register(settings_system)
   # Alternative: register as abstract class
