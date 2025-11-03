@@ -35,7 +35,7 @@ extends RefCounted
 ## - Do not use get_service in a Node's _init function as it might not yet be initialized.[br]
 ## - It is advised to use _enter_tree to register nodes and _exit_tree to unregister.[br]
 ## - It is advised to register abstract base classes instead of direct implementations.[br]
-## - It is recommended to only use get_service a service once during _ready.[br]
+## - It is advised to use Services.get_service only during or after _ready in the Node's lifecycle..[br]
 ##[br]
 ##[b][u]Metadata[/u][/b] [br]
 ##[b]Author:[/b] Jonas Walter aka. sidpoke [br]
