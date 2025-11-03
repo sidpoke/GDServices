@@ -90,7 +90,7 @@ var _main_menu: MainMenu:
 
 ## Risks
 Register Nodes sparingly, a Service Locator hides dependencies actively (as do Singletons) and they can cause setup overhead when writing unit tests.\
-Dependency injection is a more scalable choice than the service locator, but a big improvement over Singletons, as they allow IoC.\
+Dependency injection is a more scalable choice than the service locator, but a big improvement over Singletons.\
 Service Locators are accused of breaking the Interface-Segregation Principle, you should inform yourself what you're getting into when choosing this.\
 Overall i would personally recommend this for small to medium sized projects. For me, i use this in almost all my games.
 
